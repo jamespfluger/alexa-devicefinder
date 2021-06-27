@@ -44,9 +44,7 @@
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
     <string name="title_activity_settings">SettingsActivity</string>
     <string name="permissionsExplanation">
-        If you want me to find your device as quickly as possible, I need to be granted some permissions.\n\n
-        <br /><br />
-        These are not required, but they help me find your device a lot faster!
+        These permissions aren\'t required, but they help me find your device as quickly as possible!
     </string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="save_settings_toast">Successfully saved settings</string>
@@ -103,7 +101,7 @@
     <string name="use_flashlight_title">Use flashlight</string>
     <string name="use_flashlight_subtitle">Flashlight will turn on/off when finding device</string>
     <string name="permissions_logo_content_description">Permissions logo</string>
-    <string name="disable_battery_optimization_explanation">This allows the notification to reach your phone quickly.\nThe app uses very little battery, so this has very little impact.</string>
+    <string name="disable_battery_optimization_explanation">This helps me start up faster so I can ring sooner</string>
     <string name="disable_battery_optimization">Disable Battery Optimization</string>
     <string name="allow_do_not_disturb_override">Allow Do Not Disturb Override</string>
     <string name="allow_do_not_disturb_override_explanation">This allows the notification to reach your phone even if you accidentally put it on silent.</string>

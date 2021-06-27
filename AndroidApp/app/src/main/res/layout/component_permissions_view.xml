@@ -11,46 +11,46 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:orientation="vertical">
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content">
 
             <ImageButton
                 android:id="@+id/permissionStatusIcon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#00000000"
                 android:contentDescription="@string/permission_status"
-                android:gravity="end"
+                android:layout_gravity="center"
+                android:foregroundGravity="center"
                 android:src="@drawable/alert_circle"
-                android:tint="@color/red_error" />
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:background="@color/transparent"
+                android:paddingHorizontal="2dp" />
 
             <Button
                 android:id="@+id/permissionGrantButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="end"
-                android:backgroundTint="#00000000"
-                android:outlineSpotShadowColor="#00000000"
-                android:textColor="@color/gray" />
+                android:layout_toStartOf="@id/permissionExpandButton"
+                android:layout_toEndOf="@id/permissionStatusIcon"
+                android:layout_marginEnd="-12dp"
+                style="@style/AppTheme.ButtonSecondary" />
 
-            <Button
-                android:id="@+id/permissionExpandButton"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="end"
-                android:layout_marginStart="4dp"
-                android:background="#00000000"
-                android:drawableEnd="@drawable/expand_arrow"
-                android:paddingEnd="8dp"
-                android:text="@string/whyQuestion"
-                android:textAlignment="viewEnd"
-                android:textColor="@color/gray_light" />
-        </LinearLayout>
+        <Button
+            android:id="@+id/permissionExpandButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/expand_arrow"
+            android:layout_alignParentEnd="true"
+            android:text="@string/whyQuestion"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/text_light"
+            android:background="@color/transparent"/>
+            <!--style="@style/AppTheme.Permissions.Expand" />-->
+        </RelativeLayout>
 
         <TextView
             android:id="@+id/permissionExplanation"
@@ -60,7 +60,6 @@
             android:layout_marginEnd="16dp"
             android:maxLines="100"
             android:textAppearance="@style/TextAppearance.AppCompat.Small"
-            android:textColor="#888888"
             android:visibility="gone" />
     </LinearLayout>
 </merge>

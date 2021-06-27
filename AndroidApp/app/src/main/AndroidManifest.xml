@@ -19,8 +19,7 @@
         <activity android:name=".activities.PermissionsActivity" />
         <activity
             android:name=".activities.DevicesConfigActivity"
-            android:label="@string/title_activity_device_navigation"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:label="@string/title_activity_device_navigation" />
         <activity
             android:name=".activities.NameActivity"
             android:windowSoftInputMode="adjustPan" />
@@ -76,7 +75,7 @@
         </receiver>
         <receiver
             android:name=".notifications.NotificationDismissedReceiver"
-            android:exported="false"></receiver>
+            android:exported="false" />
 
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_icon"

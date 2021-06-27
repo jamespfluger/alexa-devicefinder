@@ -1,31 +1,4 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/blue</item>
-        <item name="colorPrimaryDark">@color/gray_light</item>
-        <item name="colorAccent">@color/blue_dark</item>
-        <item name="android:windowAnimationStyle">@style/SlideActivityTransitions</item>
-    </style>
-
-    <style name="AppTheme.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-        <item name="android:windowAnimationStyle">@style/SlideActivityTransitions</item>
-    </style>
-
-    <style name="SlideActivityTransitions" parent="@android:style/Animation.Activity">
-        <item name="android:activityOpenEnterAnimation">@transition/slide_in_right</item>
-        <item name="android:activityOpenExitAnimation">@transition/slide_out_left</item>
-        <item name="android:activityCloseEnterAnimation">@transition/slide_in_left</item>
-        <item name="android:activityCloseExitAnimation">@transition/slide_out_right</item>
-    </style>
-
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
-
-    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
-
     <style name="Controls.OtpEditText" parent="@android:style/Widget.EditText">
         <item name="android:digits">0123456789</item>
         <item name="android:importantForAutofill" tools:targetApi="o">no</item>
@@ -33,5 +6,4 @@
         <item name="android:maxLength">1</item>
         <item name="android:textAlignment">center</item>
     </style>
-
 </resources>
