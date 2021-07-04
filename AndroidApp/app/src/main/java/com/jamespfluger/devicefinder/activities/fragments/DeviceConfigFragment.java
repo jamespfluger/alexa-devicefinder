@@ -60,6 +60,7 @@ public class DeviceConfigFragment extends Fragment {
     public void onViewCreated(final View view, @Nullable Bundle savedInstanceState) {
         final EditText deviceName = view.findViewById(R.id.settingsDeviceNameField);
         deviceName.setText(device.getDeviceName());
+
         deviceName.setOnFocusChangeListener((v, hasFocus) -> {
             if (!hasFocus) {
                 InputMethodManager inputMethodManager = (InputMethodManager) getActivity().getSystemService(INPUT_METHOD_SERVICE);

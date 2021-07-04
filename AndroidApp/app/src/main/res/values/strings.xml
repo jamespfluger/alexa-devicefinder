@@ -10,7 +10,7 @@
     <string name="title_activity_launch">Device Finder</string>
     <string name="logo_to_display_when_loading_app">Logo to display when loading app</string>
     <string name="alexa_device_finder">Alexa Device Finder</string>
-    <string name="alexa_device_finder_content_description">Alexa Device Finder</string>
+    <string name="alexa_device_finder_content_description">Name of app (Alexa Device Finder)</string>
     <string name="warning">ATTENTION</string>
     <string name="doNotDisturbWarning">Do Not Disturb permission is REQUIRED in order for this app to alert you when your phone is in silent mode. Otherwise it will be unable to find your phone when it is on silent!</string>
     <string name="batteryOptimizationWarning">Ignore Battery Optimization permission is HIGHLY RECOMMENDED in order for this app to alert you when your phone is in silent mode. Otherwise there may be a significant delay in finding your phone!!</string>

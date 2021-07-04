@@ -48,7 +48,7 @@ public class PermissionsFragment extends Fragment {
                 continueButton.setVisibility(View.GONE);
             } else {
                 continueButton.setOnClickListener(v -> {
-                    if (!hasGrantedDisableBatteryPermissions() || !hasGrantedDisableBatteryPermissions()) {
+                    if (!hasGrantedDisableBatteryPermissions() || !hasGrantedDndPermissions()) {
                         validatePermissions();
                     } else {
                         switchToDeviceNameActivity();

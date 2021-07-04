@@ -10,7 +10,7 @@
     android:paddingTop="16dp"
     android:paddingRight="16dp"
     android:paddingBottom="16dp"
-    android:theme="@style/AppTheme.AppBarOverlay">
+    android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar">
 
     <ImageView
         android:layout_width="wrap_content"
@@ -24,10 +24,12 @@
         android:layout_height="wrap_content"
         android:paddingTop="8dp"
         android:text="@string/nav_header_title"
+        android:textColor="@color/text_light"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/text_light"
         android:text="@string/nav_header_subtitle" />
 </LinearLayout>

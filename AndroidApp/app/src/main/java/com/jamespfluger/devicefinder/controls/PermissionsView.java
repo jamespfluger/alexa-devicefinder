@@ -51,6 +51,7 @@ public class PermissionsView extends LinearLayout {
 
         final TextView explanationTextView = findViewById(R.id.permissionExplanation);
         final Button expandExplanationButton = findViewById(R.id.permissionExpandButton);
+        final ImageButton expandExplanationArrpw = findViewById(R.id.permissionExpandArrow);
         permissionStatusButton = findViewById(R.id.permissionStatusIcon);
         grantPermissionButton = findViewById(R.id.permissionGrantButton);
 
@@ -61,6 +62,13 @@ public class PermissionsView extends LinearLayout {
         explanationTextView.setText(permissionsExplanation);
 
         expandExplanationButton.setOnClickListener(v -> {
+            if (explanationTextView.getVisibility() == GONE) {
+                explanationTextView.setVisibility(VISIBLE);
+            } else {
+                explanationTextView.setVisibility(GONE);
+            }
+        });
+        expandExplanationArrpw.setOnClickListener(v -> {
             if (explanationTextView.getVisibility() == GONE) {
                 explanationTextView.setVisibility(VISIBLE);
             } else {

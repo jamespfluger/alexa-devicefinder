@@ -1,3 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="blue">#01699B</color>
+    <color name="blue_dark">#015982</color>
+    <color name="gray_light">#B2B2B2</color>
+    <color name="gray">#555555</color> <!-- Not used -->
+    <color name="gray_dark">#353535</color> <!-- Not used -->
+    <color name="red">#BF5D60</color> <!-- Not used -->
+    <color name="green">#788F66</color>
+    <color name="red_error">#B33D3D</color>
+    <color name="yellow_caution">#E0B60F</color>
+
+    <color name="text">#CFCFCF</color>
+
+    <color name="transparent">#00000000</color>
 </resources>

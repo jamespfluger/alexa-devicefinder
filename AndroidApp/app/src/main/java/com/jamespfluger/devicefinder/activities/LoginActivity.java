@@ -9,6 +9,8 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.amazon.identity.auth.device.AuthError;
 import com.amazon.identity.auth.device.api.authorization.AuthCancellation;
 import com.amazon.identity.auth.device.api.authorization.AuthorizationManager;
@@ -20,7 +22,7 @@ import com.amazon.identity.auth.device.api.workflow.RequestContext;
 import com.jamespfluger.devicefinder.R;
 import com.jamespfluger.devicefinder.utilities.AmazonLoginHelper;
 
-public class LoginActivity extends Activity {
+public class LoginActivity extends AppCompatActivity {
     private RequestContext requestContext;
     private Button loginButton;
     private TextView loginText;
