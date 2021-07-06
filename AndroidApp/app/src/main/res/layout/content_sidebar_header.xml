@@ -3,33 +3,33 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="176dp"
-    android:background="@drawable/side_nav_bar"
+    android:background="@drawable/gradient_side_nav_bar"
     android:gravity="bottom"
     android:orientation="vertical"
     android:paddingLeft="16dp"
     android:paddingTop="16dp"
     android:paddingRight="16dp"
     android:paddingBottom="16dp"
-    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+    android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar">
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
         android:contentDescription="@string/nav_header_desc"
         android:paddingTop="8dp"
-        app:srcCompat="@drawable/plain_icon" />
+        app:srcCompat="@drawable/ic_plain_icon" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="8dp"
         android:text="@string/nav_header_title"
+        android:textColor="@color/text_light"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
     <TextView
-        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/text_light"
         android:text="@string/nav_header_subtitle" />
 </LinearLayout>

@@ -23,12 +23,12 @@
             android:layout_marginTop="64dp"
             android:layout_weight="1"
             android:contentDescription="@string/verification_logo_content_description"
-            android:src="@drawable/otp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.55"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:srcCompat="@drawable/otp" />
+            android:src="@drawable/img_otp"
+            tools:srcCompat="@drawable/img_otp" />
 
         <TextView
             android:id="@+id/verificationTitle"
@@ -137,7 +137,6 @@
             android:layout_height="wrap_content"
             android:paddingHorizontal="24dp"
             android:text="@string/submit"
-            android:textColor="@android:color/secondary_text_light"
             android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -148,12 +147,12 @@
             android:id="@+id/otpHelpIcon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="12dp"
             android:contentDescription="@string/help"
-            android:scaleX="1.5"
-            android:scaleY="1.5"
-            android:src="@drawable/help_circle"
+            android:scaleX="1.25"
+            android:scaleY="1.25"
+            android:src="@drawable/ic_help"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 

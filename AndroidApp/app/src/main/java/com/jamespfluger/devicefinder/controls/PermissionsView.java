@@ -7,7 +7,6 @@ import android.graphics.drawable.Drawable;
 import android.provider.Settings;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
-import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
@@ -36,9 +35,9 @@ public class PermissionsView extends LinearLayout {
         Drawable statusIcon;
 
         if (isEnabled) {
-            statusIcon = ResourcesCompat.getDrawable(getResources(), R.drawable.check_circle, getContext().getTheme());
+            statusIcon = ResourcesCompat.getDrawable(getResources(), R.drawable.ic_positive, getContext().getTheme());
         } else {
-            statusIcon = ResourcesCompat.getDrawable(getResources(), R.drawable.alert_circle, getContext().getTheme());
+            statusIcon = ResourcesCompat.getDrawable(getResources(), R.drawable.ic_alert, getContext().getTheme());
         }
 
         permissionStatusButton.setImageDrawable(statusIcon);
@@ -51,6 +50,7 @@ public class PermissionsView extends LinearLayout {
 
         final TextView explanationTextView = findViewById(R.id.permissionExplanation);
         final Button expandExplanationButton = findViewById(R.id.permissionExpandButton);
+        final ImageButton expandExplanationArrpw = findViewById(R.id.permissionExpandArrow);
         permissionStatusButton = findViewById(R.id.permissionStatusIcon);
         grantPermissionButton = findViewById(R.id.permissionGrantButton);
 
@@ -61,6 +61,13 @@ public class PermissionsView extends LinearLayout {
         explanationTextView.setText(permissionsExplanation);
 
         expandExplanationButton.setOnClickListener(v -> {
+            if (explanationTextView.getVisibility() == GONE) {
+                explanationTextView.setVisibility(VISIBLE);
+            } else {
+                explanationTextView.setVisibility(GONE);
+            }
+        });
+        expandExplanationArrpw.setOnClickListener(v -> {
             if (explanationTextView.getVisibility() == GONE) {
                 explanationTextView.setVisibility(VISIBLE);
             } else {

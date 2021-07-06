@@ -86,12 +86,7 @@ public class DevicesConfigActivity extends AppCompatActivity {
         new AlertDialog.Builder(this)
                 .setTitle(R.string.quit)
                 .setMessage(R.string.confirm_quit_question)
-                .setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        DevicesConfigActivity.super.onBackPressed();
-                    }
-                })
+                .setPositiveButton(R.string.yes, (dialog, which) -> DevicesConfigActivity.super.onBackPressed())
                 .setNegativeButton(R.string.no, null)
                 .show();
     }

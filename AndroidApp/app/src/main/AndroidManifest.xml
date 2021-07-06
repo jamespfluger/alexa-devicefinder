@@ -16,30 +16,33 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.PermissionsActivity" />
-        <activity
-            android:name=".activities.DevicesConfigActivity"
-            android:label="@string/title_activity_device_navigation"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".activities.NameActivity"
-            android:windowSoftInputMode="adjustPan" />
         <activity
             android:name=".activities.LaunchActivity"
             android:label="@string/title_activity_launch"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".activities.OtpActivity"
-            android:windowSoftInputMode="adjustPan" />
-        <activity
             android:name=".activities.LoginActivity"
-            android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.PermissionsActivity"
+            android:label="Device Setup (1/3)" />
+        <activity
+            android:name=".activities.NameActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:label="Device Setup (2/3)" />
+        <activity
+            android:name=".activities.OtpActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:label="Device Setup (3/3)" />
+        <activity
+            android:name=".activities.DevicesConfigActivity"
+            android:label="@string/title_activity_device_navigation"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="com.amazon.identity.auth.device.workflow.WorkflowActivity"
             android:allowTaskReparenting="true"
@@ -76,7 +79,7 @@
         </receiver>
         <receiver
             android:name=".notifications.NotificationDismissedReceiver"
-            android:exported="false"></receiver>
+            android:exported="false" />
 
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_icon"

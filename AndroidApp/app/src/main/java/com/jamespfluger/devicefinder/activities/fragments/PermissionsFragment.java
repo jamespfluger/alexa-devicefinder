@@ -15,7 +15,6 @@ import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
-import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
 import com.jamespfluger.devicefinder.R;
@@ -48,7 +47,7 @@ public class PermissionsFragment extends Fragment {
                 continueButton.setVisibility(View.GONE);
             } else {
                 continueButton.setOnClickListener(v -> {
-                    if (!hasGrantedDisableBatteryPermissions() || !hasGrantedDisableBatteryPermissions()) {
+                    if (!hasGrantedDisableBatteryPermissions() || !hasGrantedDndPermissions()) {
                         validatePermissions();
                     } else {
                         switchToDeviceNameActivity();
@@ -87,7 +86,7 @@ public class PermissionsFragment extends Fragment {
 
         AlertDialog.Builder alertBuilder = new AlertDialog.Builder(parentActivity);
         alertBuilder.setTitle(R.string.warning_message);
-        alertBuilder.setIcon(R.drawable.caution_triangle);
+        alertBuilder.setIcon(R.drawable.ic_caution);
         alertBuilder.setMessage(R.string.confirm_deny_permissions);
         alertBuilder.setPositiveButton(R.string.yes, dialogClickListener);
         alertBuilder.setNegativeButton(R.string.no, dialogClickListener);

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/img_otp_phone" />
+    <item android:drawable="@drawable/img_otp_server" />
+    <item android:drawable="@drawable/img_otp_code" />
+</layer-list>
