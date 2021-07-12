@@ -3,7 +3,7 @@
     <color name="blue">#01699B</color>
     <color name="blue_light">#4F97CC</color>
     <color name="blue_dark">#015982</color>
-    <color name="gray_light">#B2B2B2</color>
+    <color name="gray_light">#B2B2B2</color> <!-- Not used -->
     <color name="gray">#555555</color> <!-- Not used -->
     <color name="gray_dark">#353535</color> <!-- Not used -->
     <color name="red">#BF5D60</color> <!-- Not used -->
@@ -13,17 +13,15 @@
     <color name="yellow_caution">#E0B60F</color>
 
     <color name="text">#454545</color>
-    <color name="text_light">#EFEFEF</color>
-
-    <color name="button_text">#EEEEEE</color>
-
-    <color name="transparent">#00000000</color>
+    <color name="text_light">@android:color/white</color>
     <color name="help_icon">#B3B3B3</color>
 
+    <color name="logo_main_primary">@color/blue</color>
+    <color name="logo_main_secondary">@color/blue_dark</color>
+    <color name="logo_main_mono">@android:color/white</color>
 
-    <color name="logo_primary">#01699B</color>
-    <color name="logo_secondary">#4F97CC</color>
-    <color name="logo_dark">#015982</color>
-    <color name="logo_mono_dark">#000000</color>
-    <color name="logo_mono_light">#EEEEEE</color>
+    <color name="logo_setup_primary">@color/blue</color>
+    <color name="logo_setup_secondary">@color/blue_light</color>
+    <color name="logo_setup_dark">@color/blue_dark</color>
+    <color name="logo_setup_mono">#414141</color>
 </resources>

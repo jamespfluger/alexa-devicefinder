@@ -30,7 +30,7 @@ public class LaunchActivity extends AppCompatActivity {
         ConfigManager.refreshFirebaseToken();
 
         setContentView(R.layout.activity_launch);
-        switchToActivity(LoginActivity.class);
+        switchToActivity(PermissionsActivity.class);
         //selectActivityToLaunch();
     }
 

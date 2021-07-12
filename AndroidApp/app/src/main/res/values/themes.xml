@@ -6,10 +6,13 @@
         <item name="colorAccent">@color/blue_dark</item>
         <item name="colorSecondary">@color/blue_light</item>
 
-        <item name="colorPrimaryDark">@color/gray_light</item>
+        <item name="colorPrimaryDark">@color/blue_dark</item>
         <item name="android:textColor">@color/text</item>
 
         <item name="actionBarTheme">@style/AppTheme.ActionBar</item>
+
+        <item name="alertDialogTheme">@style/Temp.AlertDialog</item>
+        <item name="materialAlertDialogTheme">@style/AppTheme.AlertDialog</item>
 
         <item name="materialButtonStyle">@style/AppTheme.Button</item>
         <item name="android:textViewStyle">@style/AppTheme.TextView</item>
@@ -25,17 +28,54 @@
     <style name="AppTheme.ActionBar" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <item name="colorPrimary">@color/blue</item>
         <item name="colorSurface">@color/blue</item>
-        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
     </style>
 
     <style name="AppTheme.TextView" parent="Widget.MaterialComponents.TextView">
-        <!--<item name="android:textColor">@color/text</item>-->
+        <item name="android:textColor">@color/text</item>
     </style>
+
     <style name="AppTheme.Button" parent="Widget.MaterialComponents.Button">
         <!--<item name="backgroundTint">#303030</item>-->
         <item name="android:textColor">@color/text_light</item>
         <!--<item name="android:fontFamily">sans-serif</item>-->
     </style>
+
+    <style name="Temp.AlertDialog" parent="ThemeOverlay.AppCompat.Dialog.Alert">
+        <item name="buttonBarButtonStyle">@style/Temp.AlertDialog.ButtonStyle</item>
+    </style>
+
+    <style name="Temp.AlertDialog.ButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/text</item>
+    </style>
+
+    <style name="AppTheme.AlertDialog" parent="@style/ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="buttonBarPositiveButtonStyle">@style/AppTheme.AlertDialog.Button</item>
+        <item name="buttonBarNegativeButtonStyle">@style/AppTheme.AlertDialog.Button</item>
+        <item name="materialAlertDialogBodyTextStyle">@style/AppTheme.AlertDialog.Text.Body</item>
+        <item name="materialAlertDialogTitleTextStyle">@style/AppTheme.AlertDialog.Text.Title</item>
+    </style>
+
+    <style name="AppTheme.AlertDialog.Text.Title" parent="MaterialAlertDialog.MaterialComponents.Title.Text">
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="AppTheme.AlertDialog.Text.Body" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:textColor">@color/text_light</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="AppTheme.AlertDialog.Button" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <!--<style name="AppTheme.AlertDialog2" parent="Theme.MaterialComponents.DayNight.Dialog.Alert">
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textColorPrimary">@color/text</item>
+        <item name="android:colorAccent">@color/text</item>
+    </style>-->
 
     <style name="AppTheme.Transitions.Slide" parent="@android:style/Animation.Activity">
         <item name="android:activityOpenEnterAnimation">@transition/slide_in_right</item>

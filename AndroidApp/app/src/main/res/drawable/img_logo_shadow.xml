@@ -5,6 +5,6 @@
     android:viewportHeight="1024">
   <path
       android:pathData="M746,360.5l0,172.5 -66,-0 -66,-0 0,127 0,127 -193,-0 -193,-0 0,29.7 0.1,29.8 89.9,82.9c49.5,45.7 90.5,83.3 91.2,83.7 0.7,0.4 8.3,1.9 16.8,3.3 102,17 204.2,3.9 297.5,-38.4 111.9,-50.5 204,-142.6 254.5,-254.5 24.3,-53.7 38.8,-109.6 44.1,-170 2.5,-28.1 1.4,-75.3 -2.3,-104.8l-1.1,-8.8 -136.3,-126 -136.4,-125.9 0,172.5z"
-      android:fillColor="@color/logo_dark"
-      android:strokeColor="@color/logo_dark"/>
+      android:fillColor="@color/logo_main_secondary"
+      android:strokeColor="@color/logo_main_secondary"/>
 </vector>

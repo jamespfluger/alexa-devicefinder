@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="blue">#0C567A</color>
-    <color name="blue_light">#4F97CC</color>
-    <color name="blue_dark">#015982</color>
-    <color name="gray_light">#B2B2B2</color>
+    <color name="blue_light">#396E93</color>
+    <color name="blue_dark">#0D5172</color>
 
-    <color name="text">#CCCCCC</color>
-    <color name="button_text">#BABABA</color>
+    <color name="text">#C1C1C1</color>
+    <color name="text_light">#C7C7C7</color>
     <color name="help_icon">#616161</color>
+
+    <color name="logo_main_primary">@color/blue</color>
+    <color name="logo_main_secondary">@color/blue_dark</color>
+    <color name="logo_main_mono">#CCCCCC</color>
+
+    <color name="logo_setup_primary">@color/blue</color>
+    <color name="logo_setup_secondary">@color/blue_light</color>
+    <color name="logo_setup_dark">@color/blue_dark</color>
+    <color name="logo_setup_mono">#AFAFAF</color>
 </resources>
